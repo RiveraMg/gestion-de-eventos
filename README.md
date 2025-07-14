@@ -15,7 +15,7 @@ Application developed as a performance test for Module 3 (JavaScript) using Vite
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/RiveraMg/melanierivera710.git
+git clone [https://github.com/RiveraMg/melanierivera710.git]
 cd melanierivera710
 ```
 
