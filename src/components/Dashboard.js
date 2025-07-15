@@ -18,7 +18,7 @@ export async function renderDashboard() {
           user.role === 'admin'
             ? `<button onclick="editEvent(${event.id})">Editar</button>
                <button onclick="deleteEvent(${event.id})">Eliminar</button>`
-            : <button onclick="register(${event.id})">Registrarse</button>
+            : `<button onclick="register(${event.id})">Registrarse</button>`
         }
       </div>
     `
@@ -48,7 +48,7 @@ export async function renderDashboard() {
 
     window.editEvent = (id) => navigateTo('/dashboard/events/edit?id=' + id)
     window.deleteEvent = async (id) => {
-      await fetch(`http://localhost:5000/events/${id}, { method: 'DELETE' }`)
+      await fetch(`http://localhost:5000/events/${id}`, { method: 'DELETE' })
       renderDashboard()
     }
   } else {
